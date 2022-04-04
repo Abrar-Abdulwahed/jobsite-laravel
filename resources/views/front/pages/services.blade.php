@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('front.layout.master')
 @section('content')
 <section class="service-section mt-5 section-padding">
 	<div class="container">

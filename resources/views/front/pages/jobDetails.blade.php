@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('front.layout.master')
 @section('content')
 <section class="jobDetails-section">
 قيد التطوير ^^

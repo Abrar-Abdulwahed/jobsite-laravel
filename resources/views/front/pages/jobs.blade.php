@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('front.layout.master')
 @section('content')
 <section class="jobs-section mt-3">
     <div class="container">
