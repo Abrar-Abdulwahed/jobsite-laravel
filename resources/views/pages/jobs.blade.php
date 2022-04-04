@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light py-4">
             <div class="container">
-                <a class="navbar-brand" href="/../">Logo</a>
+                <a class="navbar-brand" href="/">Logo</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" style="border-bottom: 2px solid var(--primary-clr);" aria-current="page" href="/../">Home</a>
+                            <a class="nav-link active" style="border-bottom: 2px solid var(--primary-clr);" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/jobs">Find a Job</a>
@@ -478,7 +478,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <!-- logo -->
                             <div class="footer-logo mb-20">
-                            <a href="/../"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="/"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">

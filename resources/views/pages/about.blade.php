@@ -12,7 +12,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light py-4">
 			<div class="container">
-				<a class="navbar-brand" href="/../">Logo</a>
+				<a class="navbar-brand" href="/">Logo</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -31,7 +31,7 @@
 								class="nav-link active"
 								style="border-bottom: 2px solid var(--primary-clr)"
 								aria-current="page"
-								href="/../"
+								href="/"
 								>Home</a
 							>
 						</li>
