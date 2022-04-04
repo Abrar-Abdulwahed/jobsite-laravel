@@ -221,7 +221,7 @@
                                         </ul>
                                         <span class="d-block text-center mt-4">
                                             Do have an account? Login
-                                            <a href="login.html" class="text-primary">here</a>
+                                            <a href="/login" class="text-primary">here</a>
                                         </span
 										>
                                     </div>

@@ -12,7 +12,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light py-4">
 			<div class="container">
-				<a class="navbar-brand" href="../index.html">Logo</a>
+				<a class="navbar-brand" href="/../">Logo</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -31,24 +31,24 @@
 								class="nav-link active"
 								style="border-bottom: 2px solid var(--primary-clr)"
 								aria-current="page"
-								href="../index.html"
+								href="/../"
 								>Home</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="jobs.html">Find a Job</a>
+							<a class="nav-link" href="/jobs">Find a Job</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
+							<a class="nav-link" href="/about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="services.html">Services</a>
+							<a class="nav-link" href="/services">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="partners.html">Partners</a>
+							<a class="nav-link" href="/partners">Partners</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
+							<a class="nav-link" href="/contact">Contact</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="dashboard/index.html">Dashboard</a>
@@ -75,8 +75,8 @@
 						</li>
 					</ul>
 					<div class="d-flex">
-						<a href="signup.html" class="btn btn-primary me-1">Register</a>
-						<a href="login.html" class="btn btn-outline-primary">Login</a>
+						<a href="/register" class="btn btn-primary me-1">Register</a>
+						<a href="/login" class="btn btn-outline-primary">Login</a>
 					</div>
 				</div>
 			</div>
@@ -109,7 +109,7 @@
 									facere dolor architecto sint.
 								</p>
 								<div class="about-btn pt-5">
-									<a class="btn btn-primary" href="contact.html">Contact Now</a>
+									<a class="btn btn-primary" href="/contact">Contact Now</a>
 								</div>
 							</div>
 						</div>
