@@ -43,3 +43,14 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('front.pages.login');
 });
+
+/** Admin Routes */
+Route::get('/admin/experiences', function () {
+    return view('admin.experience');
+});
+Route::get('/admin/skills', function () {
+    return view('admin.skill');
+});
+Route::get('/admin/educations', function () {
+    return view('admin.education');
+});
