@@ -44,13 +44,13 @@ Route::get('/login', function () {
     return view('front.pages.login');
 });
 
-/** Admin Routes */
-Route::get('/admin/experiences', function () {
+/** User CPanel Routes */
+Route::get('/dashboard/experiences', function () {
     return view('admin.experience');
 });
-Route::get('/admin/skills', function () {
+Route::get('/dashboard/skills', function () {
     return view('admin.skill');
 });
-Route::get('/admin/educations', function () {
+Route::get('/dashboard/educations', function () {
     return view('admin.education');
 });
