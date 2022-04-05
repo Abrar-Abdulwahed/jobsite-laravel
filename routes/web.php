@@ -43,3 +43,5 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('front.pages.login');
 });
+
+/** Admin Routes */
