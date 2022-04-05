@@ -45,12 +45,15 @@ Route::get('/login', function () {
 });
 
 /** User CPanel Routes */
-Route::get('/dashboard/experiences', function () {
-    return view('admin.experience');
+Route::get('/dashboard', function () {
+    return view('front.user_cpanel.index');
 });
-Route::get('/dashboard/skills', function () {
-    return view('admin.skill');
+Route::get('/dashboard/experience', function () {
+    return view('front.user_cpanel.experience');
 });
-Route::get('/dashboard/educations', function () {
-    return view('admin.education');
+Route::get('/dashboard/skill', function () {
+    return view('front.user_cpanel.skill');
+});
+Route::get('/dashboard/education', function () {
+    return view('front.user_cpanel.education');
 });

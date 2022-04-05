@@ -44,13 +44,13 @@
                             </a>
                         </li>
                         <li class="list-group-item px-0">
-                            <a href="/dashboard/skills" class="px-2">
+                            <a href="/dashboard/skill" class="px-2">
                                 <i class="fab fa-accusoft text-muted" aria-hidden="true"></i>
                                 <span class="hidden text-dark fw-bolder">Skills</span>
                             </a>
                         </li>
                         <li class="list-group-item px-0">
-                            <a href="/dashboard/experiences" class="px-2">
+                            <a href="/dashboard/experience" class="px-2">
                                 <i class="fab fa-wpexplorer text-muted" aria-hidden="true"></i>
                                 <span class="hidden text-dark fw-bolder">Experience</span>
                             </a>
