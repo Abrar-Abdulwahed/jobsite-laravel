@@ -1,4 +1,4 @@
-@extends('front.user_cpanel.layout.master')
+@extends('front.layout.master')
 @section('content')
     <header>
         <section class="hero pb-5">
