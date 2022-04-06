@@ -66,10 +66,10 @@ Route::get('/dashboard/education', function () {
 
 Route::get('/admin/partners/add', function () {
     return view('admin.partner.add_partner');
-})->name('adminPartnerAdd');
+})->name('adminAddPartner');
 Route::get('/admin/partners/all', function () {
     return view('admin.partner.list_partners');
 })->name('adminPartnerAll');
 Route::get('/admin/partners/edit/{id}', function () {
-    return view('admin.partner.edit_partner');
-})->name('adminPartnerEdit');
+    return view('admin.partner.update_partner');
+})->name('adminEditPartner');// /admin/partners/edit/{id}
