@@ -64,6 +64,7 @@ Route::get('/dashboard/education', function () {
 //     return view('front.user_cpanel.index');
 // })->name('adminIndex');
 
+/** Partner Routes */
 Route::get('/admin/partners/add', function () {
     return view('admin.partner.add_partner');
 })->name('adminAddPartner');
@@ -72,4 +73,15 @@ Route::get('/admin/partners/all', function () {
 })->name('adminPartnerAll');
 Route::get('/admin/partners/edit/{id}', function () {
     return view('admin.partner.update_partner');
-})->name('adminEditPartner');// /admin/partners/edit/{id}
+})->name('adminEditPartner');
+
+/** Service Routes */
+Route::get('/admin/services/add', function () {
+    return view('admin.service.add_service');
+})->name('adminAddService');
+Route::get('/admin/services/all', function () {
+    return view('admin.service.list_services');
+})->name('adminServiceAll');
+Route::get('/admin/services/edit/{id}', function () {
+    return view('admin.service.update_service');
+})->name('adminEditService');
