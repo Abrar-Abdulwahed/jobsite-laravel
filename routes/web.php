@@ -85,3 +85,8 @@ Route::get('/admin/services/all', function () {
 Route::get('/admin/services/edit/{id}', function () {
     return view('admin.service.update_service');
 })->name('adminEditService');
+
+/** Web Routes */
+Route::get('/admin/job/add', function () {
+    return view('admin.job.add_job');
+})->name('adminAddJob');
