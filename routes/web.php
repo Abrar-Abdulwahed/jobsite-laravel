@@ -44,13 +44,16 @@ Route::get('/login', function () {
     return view('front.pages.login');
 });
 
-/** Admin Routes */
-Route::get('/admin/experiences', function () {
-    return view('admin.experience');
+/** User CPanel Routes */
+Route::get('/dashboard', function () {
+    return view('front.user_cpanel.index');
 });
-Route::get('/admin/skills', function () {
-    return view('admin.skill');
+Route::get('/dashboard/experience', function () {
+    return view('front.user_cpanel.experience');
 });
-Route::get('/admin/educations', function () {
-    return view('admin.education');
+Route::get('/dashboard/skill', function () {
+    return view('front.user_cpanel.skill');
+});
+Route::get('/dashboard/education', function () {
+    return view('front.user_cpanel.education');
 });
