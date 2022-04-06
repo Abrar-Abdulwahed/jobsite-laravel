@@ -57,3 +57,19 @@ Route::get('/dashboard/skill', function () {
 Route::get('/dashboard/education', function () {
     return view('front.user_cpanel.education');
 });
+
+
+/** Admin CPanel Routes */
+// Route::get('/admin', function () {
+//     return view('front.user_cpanel.index');
+// })->name('adminIndex');
+
+Route::get('/admin/partners/add', function () {
+    return view('admin.partner.add_partner');
+})->name('adminPartnerAdd');
+Route::get('/admin/partners/all', function () {
+    return view('admin.partner.list_partners');
+})->name('adminPartnerAll');
+Route::get('/admin/partners/edit/{id}', function () {
+    return view('admin.partner.edit_partner');
+})->name('adminPartnerEdit');
