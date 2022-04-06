@@ -12,7 +12,7 @@
                         <div class="col-md-6">
                             <label class="form-label" for="multicol-service-name">اسم الخدمة</label>
                             <input name="service_name" type="text" id="multicol-service-name" class="form-control"
-                                placeholder="خدمة التصميم" />
+                                placeholder="مثال: خدمة التصميم" />
                         </div>
                         <div class="col-md-3">
                             <label class="form-label" for="multicol-pic">لوجو الخدمة</label>
