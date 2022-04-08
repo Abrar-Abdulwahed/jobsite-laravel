@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\admin;
 
+use App\Rules\MaxWordsRule;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
 {
@@ -28,17 +29,23 @@ class AuthController extends Controller
             return view('front.pages.signup');
         }
         else{
-            Validator::validate(
-                $request->all(),
-                [
-                    'username' => 'required|min:3|max:30',
-                    'email' => 'required',
-                    'password' => 'required|min:5|max:15',
-                    'confirm_password' => 'required|same:password',
-                    'phone' => 'required',
-                ],
-                [] 
-            ); 
+            $request->validate(
+            [
+                'firstname'         => ['required', 'string', 'min:3', 'max:30', new MaxWordsRule(2)],
+                'lasttname'         => ['required', 'string', 'min:3', 'max:30', new MaxWordsRule(1)],
+                'username'          => ['required', 'string', 'min:3', 'max:30', new MaxWordsRule(1)],
+                'email'             => 'required|email',
+                'password'          => ['required','min:5', 'max:15', Password::min(8)
+                                                                        ->letters()
+                                                                        ->mixedCase()
+                                                                        ->numbers()
+                                                                        ->symbols()
+                                                                        ->uncompromised()],
+                'confirm_password'  => 'required|same:password',
+                'phone'             => 'required',
+            ], [
+                'password.': 
+            ]);
         }
         
     }

@@ -36,6 +36,27 @@
                                         @csrf
                                         <div class="d-flex mb-3 justify-content-between">
                                             <div class="me-2 w-100">
+                                                <label for="firstname"></label>
+                                                <input type="text" id="firstname" name="firstname"
+                                                    value="{{ old('firstname') }}"
+                                                    class="form-control border-0 rounded-pill h-40" placeholder="Firstname">
+
+                                                @error('firstname')
+                                                    <span style="color: red;">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                            <div class="w-100">
+                                                <label for="lastname"></label>
+                                                <input type="text" id="lastname" name="lastname"
+                                                    value="{{ old('lastname') }}"
+                                                    class="form-control border-0 rounded-pill h-40" placeholder="Lastname">
+                                                @error('lastname')
+                                                    <span style="color: red;">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-3 justify-content-between">
+                                            <div class="me-2 w-100">
                                                 <label for="username"></label>
                                                 <input type="text" id="username" name="username"
                                                     value="{{ old('username') }}"
@@ -47,10 +68,10 @@
                                             </div>
                                             <div class="w-100">
                                                 <label for="email"></label>
-                                                <input type="email" id="email" name="email" value="{{ old('email') }}"
+                                                <input type="text" id="email" name="email" value="{{ old('email') }}"
                                                     class="form-control border-0 rounded-pill h-40" placeholder="Email">
-                                                @error('eamil')
-                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @error('email')
+                                                    <span style="color: red;">{{ $message }}</span>
                                                 @enderror
                                             </div>
                                         </div>
@@ -58,6 +79,9 @@
                                             <label for="psw"></label>
                                             <input type="password" id="psw" name="password" value="{{ old('password') }}"
                                                 class="form-control border-0 rounded-pill h-40" placeholder="Password">
+                                            @error('password')
+                                                <span style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="mb-3">
                                             <label for="conf-psw"></label>
@@ -65,8 +89,11 @@
                                                 value="{{ old('confirm_password') }}"
                                                 class="form-control border-0 rounded-pill h-40"
                                                 placeholder="confirm Password">
+                                            @error('confirm_password')
+                                                <span style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
-                                        <div class="d-flex mb-5">
+                                        <div class="mb-5">
                                             {{-- <label for="country-code"></label>
                                             <select class="form-select me-2 border-0 rounded-pill h-40"
                                                 aria-label="Default select example">
@@ -76,6 +103,9 @@
                                             <label for="phone"></label>
                                             <input type="text" id="phone" name="phone" value="{{ old('phone') }}"
                                                 class="form-control border-0 rounded-pill h-40" placeholder="Phone">
+                                            @error('phone')
+                                                <span style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <button class="btn w-100 rounded-pill text-light mb-3 h-40">
                                             Register
