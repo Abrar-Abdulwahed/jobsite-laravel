@@ -8,6 +8,7 @@
             <div class="card mb-4">
                 <h5 class="card-header">Create New Job</h5>
                 <form class="card-body" action="" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="row g-3">
                         <div class="col-md-3">
                             <label class="form-label" for="multicol-service-job-title">Job Title</label>
