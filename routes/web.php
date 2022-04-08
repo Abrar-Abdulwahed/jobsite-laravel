@@ -93,3 +93,6 @@ Route::get('/admin/job/add', function () {
 Route::get('/admin/job/all', function () {
     return view('admin.job.list_jobs');
 })->name('adminJobAll');
+Route::get('/admin/jobs/edit/{id}', function () {
+    return view('admin.job.update_job');
+})->name('adminEditJob');

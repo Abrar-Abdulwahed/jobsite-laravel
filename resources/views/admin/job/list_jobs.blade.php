@@ -42,7 +42,7 @@
                                         <span class="badge bg-label-success me-1">مفعل</span>
                                     </td>
                                     <td>
-                                        <a href="{{ route('adminEditService', '1') }}"
+                                        <a href="{{ route('adminEditJob', '1') }}"
                                             class="btn btn-icon btn-outline-dribbble">
                                             <i class="tf-icons bx bx-edit-alt me-1"></i>
                                         </a>
