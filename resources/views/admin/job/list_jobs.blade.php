@@ -13,24 +13,28 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>اسم الخدمة</th>
-                                    <th>اللوجو</th>
-                                    <th>الوصف</th>
-                                    <th>تاريخ الإنشاء</th>
-                                    <th>بواسطة</th>
-                                    <th>تاريخ التعديل</th>
-                                    <th>الحالة</th>
-                                    <th>العمليات</th>
+                                    <th>Job Title</th>
+                                    <th>Job Category</th>
+                                    <th>Details</th>
+                                    <th>Min Salary</th>
+                                    <th>Max Salary</th>
+                                    <th>Job Location</th>
+                                    <th>Created At</th>
+                                    <th>Created By</th>
+                                    <th>Updated At</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!--for loop-->
                                 <tr>
-                                    <td>name</td>
-                                    <td>
-                                        <img class="img-fluid rounded" height="150px" width="150px" src="images/default.png">
-                                    </td>
-                                    <td>description</td>
+                                    <td>title</td>
+                                    <td>category</td>
+                                    <td>details</td>
+                                    <td>min salary</td>
+                                    <td>max salary</td>
+                                    <td>location</td>
                                     <td>created_at</td>
                                     <td>created_by</td>
                                     <td>updated_at</td>
