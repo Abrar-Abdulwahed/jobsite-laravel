@@ -57,3 +57,42 @@ Route::get('/dashboard/skill', function () {
 Route::get('/dashboard/education', function () {
     return view('front.user_cpanel.education');
 });
+
+
+/** Admin CPanel Routes */
+// Route::get('/admin', function () {
+//     return view('front.user_cpanel.index');
+// })->name('adminIndex');
+
+/** Partner Routes */
+Route::get('/admin/partners/add', function () {
+    return view('admin.partner.add_partner');
+})->name('adminAddPartner');
+Route::get('/admin/partners/all', function () {
+    return view('admin.partner.list_partners');
+})->name('adminPartnerAll');
+Route::get('/admin/partners/edit/{id}', function () {
+    return view('admin.partner.update_partner');
+})->name('adminEditPartner');
+
+/** Service Routes */
+Route::get('/admin/services/add', function () {
+    return view('admin.service.add_service');
+})->name('adminAddService');
+Route::get('/admin/services/all', function () {
+    return view('admin.service.list_services');
+})->name('adminServiceAll');
+Route::get('/admin/services/edit/{id}', function () {
+    return view('admin.service.update_service');
+})->name('adminEditService');
+
+/** Job Routes */
+Route::get('/admin/job/add', function () {
+    return view('admin.job.add_job');
+})->name('adminAddJob');
+Route::get('/admin/job/all', function () {
+    return view('admin.job.list_jobs');
+})->name('adminJobAll');
+Route::get('/admin/jobs/edit/{id}', function () {
+    return view('admin.job.update_job');
+})->name('adminEditJob');
