@@ -43,8 +43,6 @@ class AuthController extends Controller
                                                                         ->uncompromised()],
                 'confirm_password'  => 'required|same:password',
                 'phone'             => 'required',
-            ], [
-                'password.': 
             ]);
         }
         
