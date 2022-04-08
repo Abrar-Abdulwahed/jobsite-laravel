@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Rules\MaxWordsRule;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
@@ -44,6 +45,16 @@ class AuthController extends Controller
                 'confirm_password'  => 'required|same:password',
                 'phone'             => 'required',
             ]);
+            $user            = new User();
+            $user->firstname = $request->firstname;
+            $user->lastname  = $request->lastname;
+            $user->username  = $request->username;
+            $user->password  = Hash::make($request->password);
+            $user->email     = $request->email;
+            $user->phone     = $request->phone;
+            if($user->save())
+                return redirect()->route('home')->with(['success'=>'user created successful']);
+            return back()->with(['error'=>'can not create user']);
         }
         
     }
