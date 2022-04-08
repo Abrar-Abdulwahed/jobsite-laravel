@@ -9,7 +9,7 @@
 * Copyright ThemeSelection (https://themeselection.com)
 ========================================================= -->
 <!-- beautify ignore:start -->
-<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="/dashboard_assets/" data-template="vertical-menu-template-semi-dark">
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="/admin/assets/" data-template="vertical-menu-template-semi-dark">
 <!-- form-layouts-vertical.html , Sat, 26 Mar 2022 16:53:12 GMT -->
 <head>
     <meta charset="utf-8" />
@@ -29,39 +29,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="/dashboard_assets/vendor/fonts/boxicons.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/fonts/fontawesome.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/fonts/flag-icons.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/fonts/flag-icons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="/dashboard_assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="/dashboard_assets/css/demo.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/admin/assets/css/demo.css" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/typeahead-js/typeahead.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/flatpickr/flatpickr.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/select2/select2.css" />
     
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/typeahead-js/typeahead.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/select2/select2.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/animate-css/animate.css" />
-    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/sweetalert2/sweetalert2.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/animate-css/animate.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/libs/sweetalert2/sweetalert2.css" />
 
     <!-- Page CSS -->
     
     <!-- Helpers -->
-    <script src="/dashboard_assets/vendor/js/helpers.js"></script>
+    <script src="/admin/assets/vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
-    <script src="/dashboard_assets/vendor/js/template-customizer.js"></script>
+    <script src="/admin/assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="/dashboard_assets/js/config.js"></script>
+    <script src="/admin/assets/js/config.js"></script>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -761,103 +761,7 @@
                 </nav>
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
-                <div class="content-wrapper">
-                    <!-- Content -->
-                    <div class="container-xxl flex-grow-1 container-p-y">
-                        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">دور النشر/</span>عرض دور النشر
-                        </h4>
-                        <!-- Multi Column with Form Separator -->
-                        <!-- Bordered Table -->
-                        <div class="card">
-                            <h5 class="card-header">جدول دور النشر</h5>
-                            <div class="card-body">
-                                <div class="table-responsive text-nowrap">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>اسم دور النشر</th>
-                                                <th>البريد الإلكتروني</th>
-                                                <th>الصورة</th>
-                                                <th>الرقم الأول</th>
-                                                <th>الرقم الثاني</th>
-                                                <th>الفاكس</th>
-                                                <th>البلد</th>
-                                                <th>العنوان</th>
-                                                <th>بواسطة</th>
-                                                <th>تاريخ التعديل</th>
-                                                <th>الحالة</th>
-                                                <th>العمليات</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!--for loop-->
-                                            <tr>
-                                                <td>name</td>
-                                                <td>email</td>
-                                                <td>
-                                                    <img class="img-fluid rounded" height="150px" width="150px"
-                                                        src="images/default.png">
-                                                </td>
-                                                <td>phone number</td>
-                                                <td>alt phone</td>
-                                                <td>fax</td>
-                                                <td>country</td>
-                                                <td>address</td>
-                                                <td>created_at</td>
-                                                <td>created_by</td>
-                                                <td>updated_at</td>
-                                                <td>
-                                                    <span class="badge bg-label-success me-1">مفعل</span>
-                                                </td>
-                                                <td>
-                                                    <a href="/update_publisher/publisher_id"
-                                                        class="btn btn-icon btn-outline-dribbble">
-                                                        <i class="tf-icons bx bx-edit-alt me-1"></i>
-                                                    </a>
-                                                    <form action="/delete_or_recovery_publisher/publisher_id"
-                                                        method="POST" style="display: inline-block;">
-                                                        <button type="submit"
-                                                            class="btn btn-icon btn-outline-dribbble">
-                                                            <i class="tf-icons bx bx-trash me-1"></i>
-                                                        </button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Bordered Table -->
-                    </div>
-                    <!-- / Content -->
-                    <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div
-                            class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script>
-                                , made with ❤️ by <a href="https://themeselection.com/" target="_blank"
-                                    class="footer-link fw-bolder">ThemeSelection</a>
-                            </div>
-                            <div>
-                                <a href="https://themeselection.com/license/" class="footer-link me-4"
-                                    target="_blank">License</a>
-                                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More
-                                    Themes</a>
-                                <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                                    target="_blank" class="footer-link me-4">Documentation</a>
-                                <a href="https://themeselection.com/support/" target="_blank"
-                                    class="footer-link d-none d-sm-inline-block">Support</a>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- / Footer -->
-                    <div class="content-backdrop fade"></div>
-                </div>
+                @yield('content')
                 <!-- Content wrapper -->
             </div>
             <!-- / Layout page -->
@@ -870,67 +774,67 @@
     <!-- / Layout wrapper -->
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="/dashboard_assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="/dashboard_assets/vendor/libs/popper/popper.js"></script>
-    <script src="/dashboard_assets/vendor/js/bootstrap.js"></script>
-    <script src="/dashboard_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/admin/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="/admin/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/admin/assets/vendor/js/bootstrap.js"></script>
+    <script src="/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="/dashboard_assets/vendor/libs/hammer/hammer.js"></script>
-    <script src="/dashboard_assets/vendor/libs/i18n/i18n.js"></script>
-    <script src="/dashboard_assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="/admin/assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="/admin/assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="/admin/assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
-    <script src="/dashboard_assets/vendor/js/menu.js"></script>
+    <script src="/admin/assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="/dashboard_assets/vendor/libs/cleavejs/cleave.js"></script>
-    <script src="/dashboard_assets/vendor/libs/cleavejs/cleave-phone.js"></script>
-    <script src="/dashboard_assets/vendor/libs/moment/moment.js"></script>
-    <script src="/dashboard_assets/vendor/libs/flatpickr/flatpickr.js"></script>
-    <script src="/dashboard_assets/vendor/libs/select2/select2.js"></script>
+    <script src="/admin/assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="/admin/assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="/admin/assets/vendor/libs/moment/moment.js"></script>
+    <script src="/admin/assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="/admin/assets/vendor/libs/select2/select2.js"></script>
 
     <!-- Vendors JS -->
-    <script src="/dashboard_assets/vendor/libs/select2/select2.js"></script>
-    <script src="/dashboard_assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-    <script src="/dashboard_assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-    <script src="/dashboard_assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
-    <script src="/dashboard_assets/vendor/libs/cleavejs/cleave.js"></script>
-    <script src="/dashboard_assets/vendor/libs/cleavejs/cleave-phone.js"></script>
-    <script src="/dashboard_assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+    <script src="/admin/assets/vendor/libs/select2/select2.js"></script>
+    <script src="/admin/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="/admin/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="/admin/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="/admin/assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="/admin/assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="/admin/assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
 
 
     <!-- Main JS -->
-    <script src="/dashboard_assets/js/main.js"></script>
+    <script src="/admin/assets/js/main.js"></script>
     <!-- Page JS -->
     <!-- Page JS -->
-    <script src="/dashboard_assets/js/pages-account-settings-account.js"></script>
+    <script src="/admin/assets/js/pages-account-settings-account.js"></script>
 
 
     <!-- ###################### Index Dashboard ####################### -->
-    <!-- <script src="/admin/dashboard_assets/vendor/libs/apex-charts/apexcharts.js"></script>
-<script src="/admin/dashboard_assets/js/main.js"></script>
-<script src="/admin/dashboard_assets/js/dashboards-crm.js"></script>
+    <!-- <script src="/admin/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="/admin/assets/js/main.js"></script>
+<script src="/admin/assets/js/dashboards-crm.js"></script>
 
 
-<script src="/admin/dashboard_assets/vendor/libs/moment/moment.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables/jquery.dataTables.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/jszip/jszip.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/pdfmake/pdfmake.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-buttons/buttons.html5.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/datatables-buttons/buttons.print.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/select2/select2.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/cleavejs/cleave.js"></script>
-<script src="/admin/dashboard_assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+<script src="/admin/assets/vendor/libs/moment/moment.js"></script>
+<script src="/admin/assets/vendor/libs/datatables/jquery.dataTables.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
+<script src="/admin/assets/vendor/libs/jszip/jszip.js"></script>
+<script src="/admin/assets/vendor/libs/pdfmake/pdfmake.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-buttons/buttons.html5.js"></script>
+<script src="/admin/assets/vendor/libs/datatables-buttons/buttons.print.js"></script>
+<script src="/admin/assets/vendor/libs/select2/select2.js"></script>
+<script src="/admin/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+<script src="/admin/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+<script src="/admin/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+<script src="/admin/assets/vendor/libs/cleavejs/cleave.js"></script>
+<script src="/admin/assets/vendor/libs/cleavejs/cleave-phone.js"></script>
 
-<script src="/admin/dashboard_assets/js/app-user-list.js"></script> -->
+<script src="/admin/assets/js/app-user-list.js"></script> -->
 
 </body>
 <!-- form-layouts-vertical.html , Sat, 26 Mar 2022 16:53:13 GMT -->
