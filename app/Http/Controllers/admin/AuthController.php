@@ -23,4 +23,23 @@ class AuthController extends Controller
         }
 
     }
+    public function register(Request $request){
+        if(!$request->isMethod('post')){
+            return view('front.pages.signup');
+        }
+        else{
+            Validator::validate(
+                $request->all(),
+                [
+                    'username' => 'required|min:3|max:30',
+                    'email' => 'required',
+                    'password' => 'required|min:5|max:15',
+                    'confirm_password' => 'required|same:password',
+                    'phone' => 'required',
+                ],
+                [] 
+            ); 
+        }
+        
+    }
 }
