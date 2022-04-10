@@ -61,6 +61,7 @@ Route::get('/dashboard/education', function () {
 
 /** User Routes */
 Route::get('/admin/users/all', [AuthController::class, 'listAll'])->name('adminUserAll');
+Route::get('/admin/users/edit/{id}', [AuthController::class, 'listAll'])->name('adminEditUser');
 
 /** Partner Routes */
 Route::get('/admin/partners/add', function () {
