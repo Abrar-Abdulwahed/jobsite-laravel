@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\admin\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,12 +37,10 @@ Route::get('/partners', function () {
 Route::get('/contact', function () {
     return view('front.pages.contact');
 });
-Route::get('/register', function () {
-    return view('front.pages.signup');
-});
-Route::get('/login', function () {
-    return view('front.pages.login');
-});
+Route::get('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/register', [AuthController::class, 'register']);
+Route::post('/register', [AuthController::class, 'register'])->name('register');
 
 /*=========== User CPanel Routes =========== */
 Route::get('/dashboard', function () {
