@@ -44,7 +44,7 @@ Route::get('/login', function () {
     return view('front.pages.login');
 });
 
-/** User CPanel Routes */
+/*=========== User CPanel Routes =========== */
 Route::get('/dashboard', function () {
     return view('front.user_cpanel.index');
 });
@@ -59,10 +59,12 @@ Route::get('/dashboard/education', function () {
 });
 
 
-/** Admin CPanel Routes */
-// Route::get('/admin', function () {
-//     return view('front.user_cpanel.index');
-// })->name('adminIndex');
+/*=========== Admin CPanel Routes =========== */
+
+/** User Routes */
+Route::get('/admin/users/all', function () {
+    return view('admin.user.list_users');
+})->name('adminUserAll');
 
 /** Partner Routes */
 Route::get('/admin/partners/add', function () {
