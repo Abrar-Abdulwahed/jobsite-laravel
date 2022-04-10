@@ -13,7 +13,8 @@ use Illuminate\Validation\Rules\Password;
 class AuthController extends Controller
 {
     public function listAll(){
-        return view('admin.user.list_users');
+        $users = User::all();
+        return view('admin.user.list_users')->with('allUsers', $users);
     }
     public function login(Request $request){
         if(!$request->isMethod('post'))
