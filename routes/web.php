@@ -60,9 +60,7 @@ Route::get('/dashboard/education', function () {
 /*=========== Admin CPanel Routes =========== */
 
 /** User Routes */
-Route::get('/admin/users/all', function () {
-    return view('admin.user.list_users');
-})->name('adminUserAll');
+Route::get('/admin/users/all', [AuthController::class, 'listAll'])->name('adminUserAll');
 
 /** Partner Routes */
 Route::get('/admin/partners/add', function () {

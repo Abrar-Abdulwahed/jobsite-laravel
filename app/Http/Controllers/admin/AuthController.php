@@ -12,6 +12,9 @@ use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
 {
+    public function listAll(){
+        return view('admin.user.list_users');
+    }
     public function login(Request $request){
         if(!$request->isMethod('post'))
             return view('front.pages.login');
