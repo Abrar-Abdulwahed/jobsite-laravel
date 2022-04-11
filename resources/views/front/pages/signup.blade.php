@@ -190,8 +190,8 @@
                                         </li>
                                     </ul>
                                     <span class="d-block text-center mt-4">
-                                        Do have an account? Login
-                                        <a href="/login" class="text-primary">here</a>
+                                        Do have an account?
+                                        <a href="{{ route('login') }}" class="text-primary">Login</a>
                                     </span>
                                 </div>
                             </div>

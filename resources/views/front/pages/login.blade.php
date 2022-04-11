@@ -61,8 +61,8 @@
                                     </a>
                                 </li>
                             </ul>
-                            <span class="d-block text-center mt-4">Don't have an account? Sign up <a href="/register"
-                                    class="text-primary">here</a></span>
+                            <span class="d-block text-center mt-4">Don't have an account? Sign up <a
+                                    href="{{ route('register') }}" class="text-primary">here</a></span>
                         </div>
                     </div>
                 </div>
