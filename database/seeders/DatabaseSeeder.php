@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
-use Database\Seeders\LaratrustSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,6 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // $this->call(LaratrustSeeder::class);
         $super_admin  = Role::create([
             'name'          => 'super_admin', 
             'display_name'  => 'Super Administrator',
@@ -37,6 +37,5 @@ class DatabaseSeeder extends Seeder
             'display_name'  => 'Aapplicant',
             'description'   => 'This is role of applicant, who register to apply a job'
         ]);
-    
     }
 }
