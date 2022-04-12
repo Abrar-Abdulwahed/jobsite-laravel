@@ -20,14 +20,16 @@ class AuthController extends Controller
         if(!$request->isMethod('post'))
             return view('front.pages.login');
         else{
-            Validator::validate(
-                $request->all(),
-                [
-                    'username_or_email' => ['required', 'min:3', 'max:30', 'unique:users'],
-                    'password' => ['required', 'min:5']
-                ],
-                [] 
-            );
+            Validator::validate($request->all(),[
+                'email'    => 'required|email',
+                'password' => 'required',
+            ], []);
+            $email = $request->email;
+            $password = $request->email;
+            if(Auth::attempt(['email' => $email, 'password' => $password])){
+                return redirect()->route('home');
+            }
+            return redirect()->route('login')->with(['message'=>'incorerct username or password or your account is not active']);
         }
 
     }
