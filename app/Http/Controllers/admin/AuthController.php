@@ -6,12 +6,16 @@ use App\Models\User;
 use App\Rules\MaxWordsRule;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
 {
+    public function adminDash(){
+        return view('admin.index');
+    }
     public function listAll(){
         $users = User::all();
         return view('admin.user.list_users')->with('allUsers', $users);
@@ -20,14 +24,16 @@ class AuthController extends Controller
         if(!$request->isMethod('post'))
             return view('front.pages.login');
         else{
-            Validator::validate(
-                $request->all(),
-                [
-                    'username_or_email' => ['required', 'min:3', 'max:30', 'unique:users'],
-                    'password' => ['required', 'min:5']
-                ],
-                [] 
-            );
+            Validator::validate($request->all(),[
+                'email'    => 'required|email',
+                'password' => 'required',
+            ], []);
+            $email = $request->email;
+            $password = $request->email;
+            if(Auth::attempt(['email' => $email, 'password' => $password])){
+                return redirect()->route('home');
+            }
+            return redirect()->route('login')->with(['message'=>'incorerct username or password or your account is not active']);
         }
 
     }
@@ -58,11 +64,16 @@ class AuthController extends Controller
             $user->password  = Hash::make($request->input('password'));
             $user->email     = $request->input('email');
             $user->phone     = $request->input('phone');
-            $user->save();
-            print_r($user);
-            return;
-         
-        }
-        
+            if($user->save()){
+                $user->attachRole('admin');
+                return redirect()->route('home')->with(['success'=>'user created successful']);
+            }
+
+            return back()->with(['error'=>'can not create user']);        
+        }    
+    }
+    public function logout(){
+        Auth::logout();
+        return redirect()->route('login');
     }
 }

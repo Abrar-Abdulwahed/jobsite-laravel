@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AuthController;
+use App\Http\Controllers\front\SiteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,31 +17,24 @@ use App\Http\Controllers\admin\AuthController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/', function () {
-    return view('front.index');
+
+Route::controller(SiteController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/jobs', 'findJob')->name('findJob');
+    Route::get('/job-details', 'jobDetail')->name('jobDetails');
+    Route::get('/services', 'service')->name('service');
+    Route::get('/partners', 'partner')->name('partner');
+    Route::get('/contact', 'contact')->name('contact');
 });
-Route::get('/about', function () {
-    return view('front.pages.about');
+
+Route::controller(AuthController::class)->group(function () {
+    Route::get('/login', 'login')->name('login');
+    Route::post('/login', 'login')->name('login');
+    Route::get('/register', 'register')->name('register');
+    Route::post('/register', 'register')->name('register');
+    Route::get('/logout', 'logout')->name('logout');
 });
-Route::get('/jobs', function () {
-    return view('fron.pages.jobs');
-});
-Route::get('/job-details', function () {
-    return view('front.pages.jogDetails');
-});
-Route::get('/services', function () {
-    return view('front.pages.services');
-});
-Route::get('/partners', function () {
-    return view('front.pages.partners');
-});
-Route::get('/contact', function () {
-    return view('front.pages.contact');
-});
-Route::get('/login', [AuthController::class, 'login']);
-Route::post('/login', [AuthController::class, 'login'])->name('login');
-Route::get('/register', [AuthController::class, 'register']);
-Route::post('/register', [AuthController::class, 'register'])->name('register');
 
 /*=========== User CPanel Routes =========== */
 Route::get('/dashboard', function () {
@@ -58,10 +52,17 @@ Route::get('/dashboard/education', function () {
 
 
 /*=========== Admin CPanel Routes =========== */
+Route::prefix('admin')->group(function (){
+    Route::controller(AuthController::class)->group(function () {
+        /** Admin Dashboard Routes */
+        Route::get('/index', 'adminDash')->name('adminDash');
 
-/** User Routes */
-Route::get('/admin/users/all', [AuthController::class, 'listAll'])->name('adminUserAll');
-Route::get('/admin/users/edit/{id}', [AuthController::class, 'listAll'])->name('adminEditUser');
+        /** Users Routes */
+        Route::get('/users/all', 'listAll')->name('adminUserAll');
+        Route::get('/users/edit/{id}', 'listAll')->name('adminEditUser');
+    });
+});
+
 
 /** Partner Routes */
 Route::get('/admin/partners/add', function () {
