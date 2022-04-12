@@ -12,6 +12,9 @@ use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
 {
+    public function adminDash(){
+        return view('admin.index');
+    }
     public function listAll(){
         $users = User::all();
         return view('admin.user.list_users')->with('allUsers', $users);
