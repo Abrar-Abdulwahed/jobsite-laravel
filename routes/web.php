@@ -53,6 +53,10 @@ Route::get('/dashboard/education', function () {
 /*=========== Admin CPanel Routes =========== */
 Route::prefix('admin')->group(function (){
     Route::controller(AuthController::class)->group(function () {
+        /** Admin Dashboard Routes */
+        Route::get('/', 'adminDash')->name('adminDash');
+        
+        /** Users Routes */
         Route::get('/users/all', 'listAll')->name('adminUserAll');
         Route::get('/users/edit/{id}', 'listAll')->name('adminEditUser');
     });
