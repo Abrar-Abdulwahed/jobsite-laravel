@@ -58,10 +58,12 @@ class AuthController extends Controller
             $user->password  = Hash::make($request->input('password'));
             $user->email     = $request->input('email');
             $user->phone     = $request->input('phone');
-            $user->save();
-            print_r($user);
-            return;
-         
+            if($user->save()){
+                $user->attachRole('admin');
+                return redirect()->route('home')->with(['success'=>'user created successful']);
+            }
+
+            return back()->with(['error'=>'can not create user']);        
         }
         
     }
