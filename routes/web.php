@@ -51,10 +51,13 @@ Route::get('/dashboard/education', function () {
 
 
 /*=========== Admin CPanel Routes =========== */
+Route::prefix('admin')->group(function (){
+    Route::controller(AuthController::class)->group(function () {
+        Route::get('/users/all', 'listAll')->name('adminUserAll');
+        Route::get('/users/edit/{id}', 'listAll')->name('adminEditUser');
+    });
+});
 
-/** User Routes */
-Route::get('/admin/users/all', [AuthController::class, 'listAll'])->name('adminUserAll');
-Route::get('/admin/users/edit/{id}', [AuthController::class, 'listAll'])->name('adminEditUser');
 
 /** Partner Routes */
 Route::get('/admin/partners/add', function () {
