@@ -74,7 +74,7 @@
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between mb-4">
                                         <div class="avatar flex-shrink-0">
-                                            <img src="../../assets/img/icons/unicons/cube-secondary.png" alt="cube"
+                                            <img src="assets/img/icons/unicons/cube-secondary.png" alt="cube"
                                                 class="rounded">
                                         </div>
                                         <div class="dropdown">
@@ -144,7 +144,7 @@
                                     <ul class="p-0 m-0">
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/oneplus.png" alt="oneplus">
+                                                <img src="assets/img/icons/unicons/oneplus.png" alt="oneplus">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -159,8 +159,7 @@
                                         </li>
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/watch-primary.png"
-                                                    alt="smart band">
+                                                <img src="assets/img/icons/unicons/watch-primary.png" alt="smart band">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -175,7 +174,7 @@
                                         </li>
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/surface.png" alt="Surface">
+                                                <img src="assets/img/icons/unicons/surface.png" alt="Surface">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -190,7 +189,7 @@
                                         </li>
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/iphone.png" alt="iphone">
+                                                <img src="assets/img/icons/unicons/iphone.png" alt="iphone">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -205,8 +204,7 @@
                                         </li>
                                         <li class="d-flex">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/earphone.png"
-                                                    alt="Bluetooth Earphone">
+                                                <img src="assets/img/icons/unicons/earphone.png" alt="Bluetooth Earphone">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -242,8 +240,8 @@
                                     <ul class="p-0 m-0">
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/laptop-secondary.png"
-                                                    alt="ENVY Laptop" class="rounded">
+                                                <img src="assets/img/icons/unicons/laptop-secondary.png" alt="ENVY Laptop"
+                                                    class="rounded">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -259,7 +257,7 @@
                                         </li>
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/computer.png" alt="Apple"
+                                                <img src="assets/img/icons/unicons/computer.png" alt="Apple"
                                                     class="rounded">
                                             </div>
                                             <div
@@ -276,7 +274,7 @@
                                         </li>
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/watch.png" alt="Smart Watch"
+                                                <img src="assets/img/icons/unicons/watch.png" alt="Smart Watch"
                                                     class="rounded">
                                             </div>
                                             <div
@@ -293,8 +291,8 @@
                                         </li>
                                         <li class="d-flex mb-4 pb-1">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/oneplus-success.png"
-                                                    alt="Oneplus RT" class="rounded">
+                                                <img src="assets/img/icons/unicons/oneplus-success.png" alt="Oneplus RT"
+                                                    class="rounded">
                                             </div>
                                             <div
                                                 class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
@@ -310,7 +308,7 @@
                                         </li>
                                         <li class="d-flex">
                                             <div class="avatar flex-shrink-0 me-3">
-                                                <img src="../../assets/img/icons/unicons/pixel.png" alt="Pixel 4a"
+                                                <img src="assets/img/icons/unicons/pixel.png" alt="Pixel 4a"
                                                     class="rounded">
                                             </div>
                                             <div
@@ -638,7 +636,7 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar me-2">
-                                                    <img src="../../assets/img/avatars/17.png" alt="Avatar"
+                                                    <img src="assets/img/avatars/17.png" alt="Avatar"
                                                         class="rounded-circle">
                                                 </div>
                                                 <div class="d-flex flex-column">
@@ -658,7 +656,7 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar me-2">
-                                                    <img src="../../assets/img/avatars/8.png" alt="Avatar"
+                                                    <img src="assets/img/avatars/8.png" alt="Avatar"
                                                         class="rounded-circle">
                                                 </div>
                                                 <div class="d-flex flex-column">
@@ -697,7 +695,7 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar me-2">
-                                                    <img src="../../assets/img/avatars/2.png" alt="Avatar"
+                                                    <img src="assets/img/avatars/2.png" alt="Avatar"
                                                         class="rounded-circle">
                                                 </div>
                                                 <div class="d-flex flex-column">
@@ -717,7 +715,7 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar me-2">
-                                                    <img src="../../assets/img/avatars/11.png" alt="Avatar"
+                                                    <img src="assets/img/avatars/11.png" alt="Avatar"
                                                         class="rounded-circle">
                                                 </div>
                                                 <div class="d-flex flex-column">
@@ -759,9 +757,8 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar-wrapper">
-                                                    <div class="avatar avatar-sm me-2"><img
-                                                            src="../../assets/img/avatars/7.png" alt="Avatar"
-                                                            class="rounded-circle"></div>
+                                                    <div class="avatar avatar-sm me-2"><img src="assets/img/avatars/7.png"
+                                                            alt="Avatar" class="rounded-circle"></div>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <a href="pages-profile-user.html"
@@ -772,8 +769,8 @@
                                         </td>
                                         <td>$459.65</td>
                                         <td><span class="badge bg-label-success"> Paid </span></td>
-                                        <td><img src="../../assets/img/icons/payments/master-light.png"
-                                                class="img-fluid" width="50" alt="masterCard"
+                                        <td><img src="assets/img/icons/payments/master-light.png" class="img-fluid"
+                                                width="50" alt="masterCard"
                                                 data-app-light-img="icons/payments/master-light.png"
                                                 data-app-dark-img="icons/payments/master-dark.html"></td>
                                         <td>
@@ -797,9 +794,8 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar-wrapper">
-                                                    <div class="avatar avatar-sm me-2"><img
-                                                            src="../../assets/img/avatars/20.png" alt="Avatar"
-                                                            class="rounded-circle"></div>
+                                                    <div class="avatar avatar-sm me-2"><img src="assets/img/avatars/20.png"
+                                                            alt="Avatar" class="rounded-circle"></div>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <a href="pages-profile-user.html"
@@ -810,9 +806,8 @@
                                         </td>
                                         <td>$93.81</td>
                                         <td><span class="badge bg-label-warning"> Pending </span></td>
-                                        <td><img src="../../assets/img/icons/payments/visa-light.png"
-                                                class="img-fluid" width="50" alt="visaCard"
-                                                data-app-light-img="icons/payments/visa-light.png"
+                                        <td><img src="assets/img/icons/payments/visa-light.png" class="img-fluid"
+                                                width="50" alt="visaCard" data-app-light-img="icons/payments/visa-light.png"
                                                 data-app-dark-img="icons/payments/visa-dark.html"></td>
                                         <td>
                                             <div class="d-flex align-items-center">
@@ -835,9 +830,8 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar-wrapper">
-                                                    <div class="avatar avatar-sm me-2"><img
-                                                            src="../../assets/img/avatars/9.png" alt="Avatar"
-                                                            class="rounded-circle"></div>
+                                                    <div class="avatar avatar-sm me-2"><img src="assets/img/avatars/9.png"
+                                                            alt="Avatar" class="rounded-circle"></div>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <a href="pages-profile-user.html"
@@ -848,9 +842,8 @@
                                         </td>
                                         <td>$934.35</td>
                                         <td><span class="badge bg-label-warning"> Pending </span></td>
-                                        <td><img src="../../assets/img/icons/payments/visa-light.png"
-                                                class="img-fluid" width="50" alt="visaCard"
-                                                data-app-light-img="icons/payments/visa-light.png"
+                                        <td><img src="assets/img/icons/payments/visa-light.png" class="img-fluid"
+                                                width="50" alt="visaCard" data-app-light-img="icons/payments/visa-light.png"
                                                 data-app-dark-img="icons/payments/visa-dark.html"></td>
                                         <td>
                                             <div class="d-flex align-items-center">
@@ -873,9 +866,8 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar-wrapper">
-                                                    <div class="avatar avatar-sm me-2"><img
-                                                            src="../../assets/img/avatars/14.png" alt="Avatar"
-                                                            class="rounded-circle"></div>
+                                                    <div class="avatar avatar-sm me-2"><img src="assets/img/avatars/14.png"
+                                                            alt="Avatar" class="rounded-circle"></div>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <a href="pages-profile-user.html"
@@ -886,8 +878,8 @@
                                         </td>
                                         <td>$794.97</td>
                                         <td><span class="badge bg-label-success"> Paid </span></td>
-                                        <td><img src="../../assets/img/icons/payments/paypal-light.png"
-                                                class="img-fluid" width="50" alt="paypalCard"
+                                        <td><img src="assets/img/icons/payments/paypal-light.png" class="img-fluid"
+                                                width="50" alt="paypalCard"
                                                 data-app-light-img="icons/payments/paypal-light.png"
                                                 data-app-dark-img="icons/payments/paypal-dark.html"></td>
                                         <td>
@@ -924,8 +916,8 @@
                                         </td>
                                         <td>$19.49</td>
                                         <td><span class="badge bg-label-success"> Paid </span></td>
-                                        <td><img src="../../assets/img/icons/payments/master-light.png"
-                                                class="img-fluid" width="50" alt="masterCard"
+                                        <td><img src="assets/img/icons/payments/master-light.png" class="img-fluid"
+                                                width="50" alt="masterCard"
                                                 data-app-light-img="icons/payments/master-light.png"
                                                 data-app-dark-img="icons/payments/master-dark.html"></td>
                                         <td>
@@ -949,9 +941,8 @@
                                         <td>
                                             <div class="d-flex justify-content-start align-items-center">
                                                 <div class="avatar-wrapper">
-                                                    <div class="avatar avatar-sm me-2"><img
-                                                            src="../../assets/img/avatars/8.png" alt="Avatar"
-                                                            class="rounded-circle"></div>
+                                                    <div class="avatar avatar-sm me-2"><img src="assets/img/avatars/8.png"
+                                                            alt="Avatar" class="rounded-circle"></div>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <a href="pages-profile-user.html"
@@ -962,8 +953,8 @@
                                         </td>
                                         <td>$636.27</td>
                                         <td><span class="badge bg-label-danger"> Failed </span></td>
-                                        <td><img src="../../assets/img/icons/payments/paypal-light.png"
-                                                class="img-fluid" width="50" alt="paypalCard"
+                                        <td><img src="assets/img/icons/payments/paypal-light.png" class="img-fluid"
+                                                width="50" alt="paypalCard"
                                                 data-app-light-img="icons/payments/paypal-light.png"
                                                 data-app-dark-img="icons/payments/paypal-dark.html"></td>
                                         <td>

@@ -28,13 +28,24 @@
                                 @csrf
                                 <div class="mb-3">
                                     <label for="username_or_email">Username / Email</label>
-                                    <input type="email" id="username_or_email" name="username_or_email"
+                                    <input type="text" id="username_or_email" name="username_or_email"
+                                        value="{{ old('username_or_email') }}"
                                         class="form-control border-0 rounded-pill h-40" />
+                                    @error('username_or_email')
+                                        <span style="color: red;">{{ $message }}</span>
+                                    @enderror
                                 </div>
                                 <div class="mb-5">
                                     <label for="psw">Password</label>
                                     <input type="password" id="psw" name="password"
                                         class="form-control border-0 rounded-pill h-40" />
+                                    @error('password')
+                                        <span style="color: red;">{{ $message }}</span>
+                                    @enderror
+                                    @if (session()->has('message'))
+                                        <span style="color: red;">{{ session()->get('message') }}</span>
+                                    @endif
+
                                 </div>
                                 <button class="btn w-100 rounded-pill text-light mb-3 h-40">Login</button>
                                 <div class="remember-forget d-flex justify-content-between align-items-baseline">

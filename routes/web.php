@@ -33,7 +33,9 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('/login', 'login')->name('login');
     Route::get('/register', 'register')->name('register');
     Route::post('/register', 'register')->name('register');
-    Route::get('/logout', 'logout')->name('logout');
+    Route::group(['middleware' => 'auth'], function(){
+        Route::get('/logout', 'logout')->name('logout');
+    });
 });
 
 /*=========== User CPanel Routes =========== */
@@ -53,13 +55,16 @@ Route::get('/dashboard/education', function () {
 
 /*=========== Admin CPanel Routes =========== */
 Route::prefix('admin')->group(function (){
-    Route::controller(AuthController::class)->group(function () {
-        /** Admin Dashboard Routes */
-        Route::get('/index', 'adminDash')->name('adminDash');
+    Route::group(['middleware' => 'auth'], function(){
+        Route::controller(AuthController::class)->group(function () {
+            /** Admin Dashboard Routes */
+            Route::get('/index', 'adminDash')->name('adminDash');
+        
 
-        /** Users Routes */
-        Route::get('/users/all', 'listAll')->name('adminUserAll');
-        Route::get('/users/edit/{id}', 'listAll')->name('adminEditUser');
+            /** Users Routes */
+            Route::get('/users/all', 'listAll')->name('adminUserAll');
+            Route::get('/users/edit/{id}', 'listAll')->name('adminEditUser');
+        });
     });
 });
 
