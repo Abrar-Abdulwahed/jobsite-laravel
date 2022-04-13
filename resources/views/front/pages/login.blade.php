@@ -24,11 +24,21 @@
                         </div>
                         <div class="col-sm-12 col-md-6 right-content text-start py-4 px-5">
                             <h3 class="form-title mb-5 text-uppercase pb-2">Login</h3>
+                            @if (!$errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                             <form class="form-content text-dark mb-3" action="{{ route('login') }}" method="POST">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="username_or_email">Username / Email</label>
                                     <input type="email" id="username_or_email" name="username_or_email"
+                                        value="{{ old('username_or_email') }}"
                                         class="form-control border-0 rounded-pill h-40" />
                                 </div>
                                 <div class="mb-5">
