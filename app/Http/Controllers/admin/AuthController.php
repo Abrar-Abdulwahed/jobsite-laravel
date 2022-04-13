@@ -30,7 +30,7 @@ class AuthController extends Controller
             ], []);
             $email = $request->username_or_email;
             $password = $request->password;
-            if(Auth::attempt(['email'=>$email,'password'=>$password])){
+            if(Auth::attempt(['email'=>$email,'password'=>$password, 'is_active' =>1])){
                 return redirect()->route('adminDash');
             }
 

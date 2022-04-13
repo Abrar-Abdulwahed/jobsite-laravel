@@ -33,7 +33,9 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('/login', 'login')->name('login');
     Route::get('/register', 'register')->name('register');
     Route::post('/register', 'register')->name('register');
-    Route::get('/logout', 'logout')->name('logout');
+    Route::group(['middleware' => 'auth'], function(){
+        Route::get('/logout', 'logout')->name('logout');
+    });
 });
 
 /*=========== User CPanel Routes =========== */
